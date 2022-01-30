@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<table>
+    <tr>
+        <td><input class="case r1 c1 s1 start" type="number" value="5" readonly></td>
+        <td><input class="case r1 c2 s1 start" type="number" value="3" readonly></td>
+        <td><input class="case small r1 c3 s1" type="number"></td>
+        <td><input class="case small r1 c4 s2" type="number"></td>
+        <td><input class="case r1 c5 s2 start" type="number" value="7" readonly></td>
+        <td><input class="case small r1 c6 s2" type="number"></td>
+        <td><input class="case small r1 c7 s3" type="number"></td>
+        <td><input class="case small r1 c8 s3" type="number"></td>
+        <td><input class="case small r1 c9 s3" type="number"></td>
+    </tr>
+    <tr>
+        <td><input class="case r2 c1 s1 start" type="number" value="6" readonly></td>
+        <td><input class="case small r2 c2 s1" type="number"></td>
+        <td><input class="case small r2 c3 s1" type="number"></td>
+        <td><input class="case r2 c4 s2 start" type="number" value="1" readonly></td>
+        <td><input class="case r2 c5 s2 start" type="number" value="9" readonly></td>
+        <td><input class="case r2 c6 s2 start" type="number" value="5" readonly></td>
+        <td><input class="case small r2 c7 s3" type="number"></td>
+        <td><input class="case small r2 c8 s3" type="number"></td>
+        <td><input class="case small r2 c9 s3" type="number"></td>
+    </tr>
+    <tr>
+        <td><input class="case small r3 c1 s1" type="number"></td>
+        <td><input class="case r3 c2 s1 start" type="number" value="9" readonly></td>
+        <td><input class="case r3 c3 s1 start" type="number" value="8" readonly></td>
+        <td><input class="case small r3 c4 s2" type="number"></td>
+        <td><input class="case small r3 c5 s2" type="number"></td>
+        <td><input class="case small r3 c6 s2" type="number"></td>
+        <td><input class="case small r3 c7 s3" type="number"></td>
+        <td><input class="case r3 c8 s3 start" type="number" value="6" readonly></td>
+        <td><input class="case small r3 c9 s3" type="number"></td>
+    </tr>
+    <tr>
+        <td><input class="case r4 c1 s4 start" type="number" value="8" readonly></td>
+        <td><input class="case small r4 c2 s4" type="number"></td>
+        <td><input class="case small r4 c3 s4" type="number"></td>
+        <td><input class="case small r4 c4 s5" type="number"></td>
+        <td><input class="case r4 c5 s5 start" type="number" value="6" readonly></td>
+        <td><input class="case small r4 c6 s5" type="number"></td>
+        <td><input class="case small r4 c7 s6" type="number"></td>
+        <td><input class="case small r4 c8 s6" type="number"></td>
+        <td><input class="case r4 c9 s6 start" type="number" value="3" readonly></td>
+    </tr>
+    <tr>
+        <td><input class="case r5 c1 s4 start" type="number" value="4" readonly></td>
+        <td><input class="case small r5 c2 s4" type="number"></td>
+        <td><input class="case small r5 c3 s4" type="number"></td>
+        <td><input class="case r5 c4 s5 start" type="number" value="8" readonly></td>
+        <td><input class="case small r5 c5 s5" type="number"></td>
+        <td><input class="case r5 c6 s5 start" type="number" value="3" readonly></td>
+        <td><input class="case small r5 c7 s6" type="number"></td>
+        <td><input class="case small r5 c8 s6" type="number"></td>
+        <td><input class="case r5 c9 s6 start" type="number" value="1" readonly></td>
+    </tr>
+    <tr>
+        <td><input class="case r6 c1 s4 start" type="number" value="7" readonly></td>
+        <td><input class="case small r6 c2 s4" type="number"></td>
+        <td><input class="case small r6 c3 s4" type="number"></td>
+        <td><input class="case small r6 c4 s5" type="number"></td>
+        <td><input class="case r6 c5 s5 start" type="number" value="2" readonly></td>
+        <td><input class="case small r6 c6 s5" type="number"></td>
+        <td><input class="case small r6 c7 s6" type="number"></td>
+        <td><input class="case small r6 c8 s6" type="number"></td>
+        <td><input class="case r6 c9 s6 start" type="number" value="6" readonly></td>
+    </tr>
+    <tr>
+        <td><input class="case small r7 c1 s7" type="number"></td>
+        <td><input class="case r7 c2 s7 start" type="number" value="6" readonly></td>
+        <td><input class="case small r7 c3 s7" type="number"></td>
+        <td><input class="case small r7 c4 s8" type="number"></td>
+        <td><input class="case small r7 c5 s8" type="number"></td>
+        <td><input class="case small r7 c6 s8" type="number"></td>
+        <td><input class="case r7 c7 s9 start" type="number" value="2" readonly></td>
+        <td><input class="case r7 c8 s9 start" type="number" value="8" readonly></td>
+        <td><input class="case small r7 c9 s9" type="number"></td>
+    </tr>
+    <tr>
+        <td><input class="case small r8 c1 s7" type="number"></td>
+        <td><input class="case small r8 c2 s7" type="number"></td>
+        <td><input class="case small r8 c3 s7" type="number"></td>
+        <td><input class="case r8 c4 s8 start" type="number" value="4" readonly></td>
+        <td><input class="case r8 c5 s8 start" type="number" value="1" readonly></td>
+        <td><input class="case r8 c6 s8 start" type="number" value="9" readonly></td>
+        <td><input class="case small r8 c7 s9" type="number"></td>
+        <td><input class="case small r8 c8 s9" type="number"></td>
+        <td><input class="case r8 c9 s9 start" type="number" value="5" readonly></td>
+    </tr>
+    <tr>
+        <td><input class="case small r9 c1 s7" type="number"></td>
+        <td><input class="case small r9 c2 s7" type="number"></td>
+        <td><input class="case small r9 c3 s7" type="number"></td>
+        <td><input class="case small r9 c4 s8" type="number"></td>
+        <td><input class="case r9 c5 s8 start" type="number" value="8" readonly></td>
+        <td><input class="case small r9 c6 s8" type="number"></td>
+        <td><input class="case small r9 c7 s9" type="number"></td>
+        <td><input class="case r9 c8 s9 start" type="number" value="7" readonly></td>
+        <td><input class="case r9 c9 s9 start" type="number" value="9" readonly></td>
+    </tr>
+</table>
+
+<button id="verify">Verify</button>
+<button id="refresh">Refresh</button>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

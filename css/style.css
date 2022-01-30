@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+input{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 0;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+button{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 380px;
+    font-family: 'Roboto', sans-serif;
+}
+table{
+    border-spacing: 0;
+    border: solid 3px;
+    margin: auto;
+}
+td{
+    padding: 0;
+}
+input{
+    border: solid 1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    font-weight: 400;
+}
+.c3, .c6{
+    border-right: solid 2px;
+}
+.c4, .c7{
+    border-left: solid 2px;
+}
+.r3, .r6{
+    border-bottom: solid 2px;
+}
+.r4, .r7{
+    border-top: solid 2px;
+}
+
+.start{
+    font-weight: 700;
+}
+
+.focused{
+    background-color: #aaa;
+}
+.insquare{
+    background-color: #eee;
+}
+.inline{
+    background-color: #ccc;
+}
+
+.error{
+    color: red;
+    border-color: black;
+}
+.small{
+    font-size: 75%
+}
